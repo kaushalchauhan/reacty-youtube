@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Machine Coding Interview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Step 1 - Recuirement Clarification - with interviewer discuss features, what feature you are going to build,
+- Step 2 - discuss tech stack, i.e - Tailwind CSS, Javascript/TypeScript,React Router DOM for routing, redux RTK/Zedust/Context API, bundler, Jest React Testing lib, Firebase, can I google search (a proper \*justification why u gonna choose that) - spend around just 5 mins about this,
+- Step 3 - Planning - next 5 mins (kinda HLD-high level design) - why to discuss? so we can be on the same page,
+- Step 4 - Features
+  - Header
+    - logo, searchbar, user logo,
+  - Side panel - links, colapse toggle
+  - main body
+    - butttons/filter
+    - if user click on the any video - opens the new page, that take user to /watch
+  - /watch
+    - same header
+    - main video
+    - subscribe, like btn
+    - video suggestion
+    - comment section
+- component diff
 
-## Available Scripts
+  - Header
+  - Sidebar
+  - Body/main container
+  - /watch
+    - watch video comp
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Now you can start coding
+- `npx create-react-app` - executing cra package
+- config tailwind CSS to our app
+  - `npm i -D tailwindcss`
+  - `npx tailwindcss init`
+  - ./src/\*_/_.{js,jsx,ts,tsx} to content tailwind.config.js file
+  - add @tailwind base @tailwind utilities @tailwind components to index.css file
+  - install redux & redux RTK - `npm i react-redux @reduxjs/toolkit`
+  - create store
+  - create appSlice
+  - setup store provide in app.js
+  - install `npm i react-router-dom`
+  - get Youtube Video API URL from `https://developers.google.com/youtube/v3/docs/videos/list?apix=true`
+  - get GOOGLE_API_KEY, create project at google console cloud, then enable YouTube Data API v3 for api request
+  -
