@@ -38,4 +38,10 @@
   - install `npm i react-router-dom`
   - get Youtube Video API URL from `https://developers.google.com/youtube/v3/docs/videos/list?apix=true`
   - get GOOGLE_API_KEY, create project at google console cloud, then enable YouTube Data API v3 for api request
-  -
+  - change within API_URL regionCode=IN to fetch Indian region videos && add maxResults=50 in url to get 50 videos, default value is 5, can fetch 1-50
+  - setup Routing in app.js
+  - fetch youtube searchsuggestion from a API
+  - Show Search result below search list
+  - **Feature - implemented debouncing in search**
+  - **Feature - implemented caching** search result by storing api res to redux store
+  - n level nested comments with static data
