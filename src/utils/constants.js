@@ -94,3 +94,5 @@ export const commentData = [
     ],
   },
 ];
+
+export const OFFSET_LIVE_CHAT = 200;

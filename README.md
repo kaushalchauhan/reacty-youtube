@@ -23,6 +23,18 @@
   - Body/main container
   - /watch
     - watch video comp
+      - video
+      - n level nested commnets
+      - Live chat
+  - Live Chat
+
+  ### Challenges in Live Chat
+
+  - To get Data Live
+  - update the UI
+  -
+  - WebSocket is a two way connection btw client and server, can quickly send data from either side(by directional live data)[no regular interval] - Trading Apps - Zerodha, Whatsapp
+  - Long Pooling / API Pooling - UI requests the server, data flow from serever, [interval] - Gmail
 
 - Now you can start coding
 - `npx create-react-app` - executing cra package
